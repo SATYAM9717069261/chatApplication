@@ -1,0 +1,63 @@
+<!DOCTYPE html >
+<html>
+	<head>
+		<title> Chat Application </title>
+	<script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+	<script defer src="script.js"></script>
+<style>
+*{
+	margin:10px;
+	padding:10px;
+	background-color:white;
+}
+.container{
+	height:600px;
+	width:600px;
+	display:block;
+	content-align:center;
+}
+.header{
+	color:white;
+	background-color:gray;
+	text-align:center;
+}
+.messagecontainer{
+	height:550px;
+}
+.textfield{
+	width:550px
+}
+.right{
+	width:400px;
+	float:right;
+}
+.left{
+	width:400px;
+	float:left;
+}
+.form{
+	display:flex;
+}
+</style>
+	</head>
+	<body>
+		<header><h2 class="header">Chat Application</h2></header>
+		<div class="container">
+			<div id="message-container" class="messagecontainer">
+				<div class="left">
+					<span style=" display:contents"> text from other side
+						The text-field package provides useful utilities for working with text input fields such as  link Automatically resizing a </span>
+				</div>
+				<div class="right">
+					<span style="display:contents"> text by me
+						The text-field package provides useful utilities for working with text input fields such as</span>
+				</div>
+			</div>
+			<form class="form" id="send-container">
+				<input type="text" id="message-input"class="textfield" />
+				<input type="submit" id="send-button"/>
+			</form>
+
+		</div>
+	</body>
+</html>
